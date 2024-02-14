@@ -1,0 +1,35 @@
+1. Importing the packages
+2. Exploring the dataset - Heart Disease UCI data
+3. data processing
+	- Droping the unwanted columns using pandas dataframes
+	- Droping the null rows using .drop() function
+4. visualization using seaborn & matplotlib
+5. Label Encoding and Feature Selection 
+6. building the model
+	- SVM
+	- RF
+	- DT
+	- LR
+	- KNN
+	- XGBoost
+	- GAussian Naive Bayes
+	- Voting Classifier
+	- GBDT
+	- Bagging+GBDT
+	- Fuzzy+GBDT
+	- Bagging+Fuzzy+GBDT
+	
+7. training the model
+8. building the model with Voting Classifier since it gives better score comparing with Other Models 
+9. Flask Framework with Sqlite for signup and signin
+10. importing the packages
+11. User gives input as Feature Values 
+12. the given input is preprocessed for prediction
+13. trained model is used for prediction
+14. final outcome is displayed through frontend
+
+Note:
+
+Extension - Voting Classifier and other SVM, RF, LR, XGB, NB are existing system,is build as Extension for feature values
+and Voting Classifier is used for prediction since we it gives better score and low MSE value comparing with other Models
+

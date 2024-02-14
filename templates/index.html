@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>HomeCare</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="static/css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="static/css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="static/css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="static/images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="static/css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+
+<body>
+   <!-- header section start -->
+   <div class="header_section">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="logo"><a href="index.html"><img src="static/images/logo.png"></a></div>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="/index">Home</a>
+               </li>
+               <li class="nav-item active">
+                <a class="nav-link" href="/about">About</a>
+             </li>
+             <li class="nav-item active">
+              <a class="nav-link" href="/notebook">Notebook</a>
+           </li>
+               
+               <li class="nav-item">
+                  <a class="nav-link" href="/login">Signout</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="static/images/search-icon.png"></a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!-- header section end -->
+      <!-- banner section start -->
+      <div id="main_slider" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="banner_section">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <h1 class="banner_taital">Health <br><span style="color: #151515;">Care</span></h1>
+                           <p class="banner_text">A Stable AI-Based Binary and Multiple Class Heart Disease Prediction Model for IoMT</p>
+                           <div class="btn_main">
+                              <div class="more_bt"><a href="#">Contact Now</a></div>
+                              <div class="contact_bt"><a href="#">Get A Quote</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="image_1"><img src="static/images/img-1.png"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="banner_section">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <h1 class="banner_taital">Health <br><span style="color: #151515;">Care</span></h1>
+                           <p class="banner_text">A Stable AI-Based Binary and Multiple Class Heart Disease Prediction Model for IoMT</p>
+                           <div class="btn_main">
+                              <div class="more_bt"><a href="#">Contact Now</a></div>
+                              <div class="contact_bt"><a href="#">Get A Quote</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="image_1"><img src="static/images/img-1.png"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="banner_section">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <h1 class="banner_taital">Health <br><span style="color: #151515;">Care</span></h1>
+                           <p class="banner_text">A Stable AI-Based Binary and Multiple Class Heart Disease Prediction Model for IoMT</p>
+                           <div class="btn_main">
+                              <div class="more_bt"><a href="#">Contact Now</a></div>
+                              <div class="contact_bt"><a href="#">Get A Quote</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="image_1"><img src="static/images/img-1.png"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+            <i class="fa fa-long-arrow-left" style="font-size:24px; padding-top: 4px;"></i>
+         </a>
+         <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+            <i class="fa fa-long-arrow-right" style="font-size:24px; padding-top: 4px;"></i>
+         </a>
+      </div>
+   </div>
+   <!-- health section start -->
+   <div class="health_section layout_padding">
+      <div class="container">
+				<form action="/predict" method="post">
+
+					<div class="form-group">
+            <label for="age" class="ph-area">Enter Your Age</label><br><br>
+					  <input type="number" name="0" id="age" class="form-control" required>
+					  
+					</div>
+					<br><br>
+					<div class="form-group">
+            <label for="age" class="ph-area">Gender</label><br><br>
+					  <select class="form-control" name="1" required="required">
+						<option value="" selected>Select Level</option>
+					
+						<option value="0">Female</option>
+            <option value="1">Male</option>
+					  </select>
+					</div>
+          <br><br><br><br>
+					<div class="form-group">
+            <label for="age" class="ph-area">Dataset Type</label><br><br>
+					  <select class="form-control" name="2" required="required">
+						<option value="" selected>Select Level</option>
+						<option value="0">Cleveland</option>
+						<option value="1">Hungary</option>
+            <option value="2">Switzerland</option>
+						<option value="3">VA Long Beach</option>
+					  </select>
+					</div>
+					<br><br><br><br>
+					<div class="form-group">
+            <label for="age" class="ph-area">Chest Pain(cp)</label><br><br>
+					  <select class="form-control chosenn" name="3" required="required">
+						<option value="" selected>Select Level</option>
+            <option value="0">Asymptomatic</option>
+						
+						<option value="1">Atypical Angina</option>
+						<option value="2">Non Anginal Pain</option>
+						<option value="3">Typical Angina</option>
+					  </select>
+					</div>
+					<br><br><br><br>
+					<div class="form-group">
+            <label for="trestbps" class="ph-area">Enter Resting Blood Pressure (mm Hg)(trestbps)</label><br><br>
+					  <input type="number" name="4" id="trestbps" class="form-control" required>
+					  
+					</div><br><br><br><br>
+					<div class="form-group">
+            <label for="chol" class="ph-area">Enter Serum Cholestoral (mg/dl)(chol)</label><br><br>
+					  <input type="number" name="5" id="chol" class="form-control" required>
+					  
+					</div>
+					<br><br><br><br>
+					<div class="form-group">
+            <label for="chol" class="ph-area">Fasting Blood Sugar (fbs)</label><br><br>
+					  <select class="form-control" name="6" required="required">
+						<option value="" selected>Select Level</option>
+						
+						<option value="0">False</option>
+            <option value="1">True</option>
+					  </select>
+					</div>
+	 
+					<br><br><br><br>
+					<div class="form-group">
+            <label for="chol" class="ph-area">Rresting Electrocardiographic Results(restecg)</label><br><br>
+					  <select class="form-control chosenn" name="7" required="required">
+						<option value="" selected>Select Level</option>
+						<option value="0">Left ventricular hypertrophy</option>
+						<option value="1">Normal</option>
+						<option value="2">ST-T abnormality</option>
+					  </select>
+					</div>
+					<br><br><br><br><br>
+					<div class="form-group">
+            <label for="thalach" class="ph-area">Enter Maximum Heart Rate Achieved (thalach)</label><br><br>
+					  <input type="number" name="8" id="thalach" class="form-control" required>
+					  
+					</div>
+					<br><br><br><br>
+					<div class="form-group"> 
+            <label for="thalach" class="ph-area">Exercise Induced Angina (exang))</label><br><br>
+					  <select class="form-control" name="9" required="required">
+						<option value="" selected>Select Level</option>
+						
+						<option value="0">False</option>
+            <option value="1">True</option>
+					  </select>
+					</div>
+					<br><br><br><br>
+					<div class="form-group">
+            <label for="oldpeak" class="ph-area">Enter Your Oldpeak(oldpeak)</label><br><br>
+					  <input type="text" name="10" id="oldpeak" class="form-control" required>
+					  
+					</div>
+					<br><br><br><br>
+					<div class="form-group">
+            <label for="oldpeak" class="ph-area">Enter Peak Exercise ST Segment (Slope)</label><br><br>
+					  <select class="form-control chosenn" name="11" required="required">
+						<option value="" selected>Select </option>
+						
+						<option value="0">Downsloping</option>
+            <option value="1">Flat</option>
+            <option value="2">Upsloping</option>
+						
+					  </select>
+					</div>
+					<br><br><br><br>
+					
+					
+				  <div class="form-group">
+					<input type="submit" class="btn btn-primary" value="Submit">
+					<input type="reset" class="btn btn-danger" value="Reset">
+				  </div>
+				</form>
+            </div>
+		</div>
+		<!-- health section end -->
+		   <!-- footer section start -->
+		<div class="footer_section layout_padding">
+		   <div class="container">
+			  <div class="row">
+				 <p class="copyright_text">2022 All Rights Reserved. Design by <a href="https://html.design">Free html Templates</a></p>
+			  </div>
+		   </div>
+		</div>
+		<!-- footer section end -->
+		
+		<!-- Javascript files-->
+		<script src="static/js/jquery.min.js"></script>
+		<script src="static/js/popper.min.js"></script>
+		<script src="static/js/bootstrap.bundle.min.js"></script>
+		<script src="static/js/jquery-3.0.0.min.js"></script>
+		<script src="static/js/plugin.js"></script>
+		<!-- sidebar -->
+		<script src="static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="static/js/custom.js"></script>
+		<!-- javascript -->
+		<script src="static/js/owl.carousel.js"></script>
+		<script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+	 </body>
+	 
+	 </html>
