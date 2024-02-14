@@ -45,9 +45,18 @@
     <!-- register button -->
     <div class="register">
       <div class="register_button">
-        <a href="/logon">Register</a>
+          <a href="{{ url_for('logon') }}">Register</a>
       </div>
-    </div>
+  </div>
+
+  <!-- header section start -->
+  <div class="header_section">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo">
+              <a href="/"><img src="static/images/logo.png" /></a>
+          </div>
+      </nav>
+  </div>
 
     <!-- header section start -->
     <div class="header_section">
@@ -244,5 +253,6 @@
     <!-- javascript -->
     <script src="static/js/owl.carousel.js"></script>
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-  </body>
+</body>
+
 </html>

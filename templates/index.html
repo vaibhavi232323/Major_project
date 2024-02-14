@@ -133,7 +133,7 @@
    <!-- health section start -->
    <div class="health_section layout_padding">
       <div class="container">
-				<form action="/predict" method="post">
+         <<form id="healthForm" action="/predict" method="post">
 
 					<div class="form-group">
             <label for="age" class="ph-area">Enter Your Age</label><br><br>
@@ -259,6 +259,37 @@
 		   </div>
 		</div>
 		<!-- footer section end -->
+
+      <script>
+         // Function to handle form submission
+         function submitForm() {
+           // Get form data
+           var formData = new FormData(document.getElementById('healthForm'));
+       
+           // Send an AJAX request to the server
+           $.ajax({
+             type: 'POST',
+             url: '/predict',
+             data: formData,
+             processData: false,
+             contentType: false,
+             success: function(response) {
+               // Handle success, you can redirect or update the page as needed
+               console.log(response);
+             },
+             error: function(error) {
+               // Handle error
+               console.error(error);
+             }
+           });
+       
+           // Prevent the default form submission
+           return false;
+         }
+       
+         // Attach the function to the form's onsubmit event
+         document.getElementById('healthForm').onsubmit = submitForm;
+       </script>
 		
 		<!-- Javascript files-->
 		<script src="static/js/jquery.min.js"></script>
